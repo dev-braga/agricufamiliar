@@ -1,0 +1,254 @@
+:root {
+    --text-color: #232e23;
+    --glow-color:#4cad398f;
+  }
+  .bg-color-custom, .section_um {
+    background-color: var(--text-color);
+  }
+  .text-dark-green {
+    color: var(--text-color);
+  }
+  .btn-glow {
+    box-shadow: 0 0 10px var(--glow-color);
+  }
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .navbar {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .navbar-brand img {
+    filter: brightness(0) invert(1);
+  }
+
+  .navbar-nav .nav-link {
+    color:var(--text-color);
+  }
+
+  section {
+    padding: 60px 0;
+    text-align: center;
+  }
+
+  .section_um{
+    height: 70vh;
+  }
+  #sessao2{
+    background-color: #fff;
+  }
+  .bg-primary {
+    background-color: #007bff;
+    color: #fff;
+  }
+  .bg-color-custom{
+   background-color: #f7f5f5; 
+  }
+  .bg-alert {
+    background-color: #ffc107;
+  }
+
+  .bg-light {
+    background-color: #f8f9fa;
+  }
+  
+  /* Adapte o estilo conforme necessário */
+  .btn-saber-mais {
+    background-color: #3a7c2d !important;
+    border-color: #3a7c2d !important;
+    color: #fff !important;
+  }
+  
+  .btn-saber-mais:hover {
+    background-color: #2f6524 !important; /* Adapte a cor do hover conforme desejado */
+    border-color: #2f6524 !important;
+  }
+  .bg-green{
+    background-color: #2f6524 !important;
+  }
+
+  h1, h2 {
+    color:var(--text-color);
+    font-family: 'Roboto', sans-serif;
+  }
+  p{
+    color: #59595a;
+  }
+  h3{
+    text-align: left;
+    color: var(--text-color);
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .btn-light {
+    background-color: #fff;
+    color: #007bff;
+  }
+
+  .btn-light:hover {
+    background-color: #007bff;
+    color: #fff;
+  }
+
+  .floating-whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    border-radius: 50%;
+    padding: 8px 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .floating-whatsapp a {
+    color: #fff;
+  }
+
+  /* Adicione ao seu bloco de estilos existente */
+
+  .scroll-down-arrow {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    opacity: 0.7;
+    animation: bounce 2s infinite;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  .scroll-down-arrow.hidden {
+    opacity: 0;
+    pointer-events: none; /* Impede interações quando invisível */
+  }
+
+  .scroll-down-arrow a {
+    font-size: 24px;
+    color: #2f6524;
+    text-decoration: none;
+  }
+
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-20px);
+    }
+    60% {
+      transform: translateY(-10px);
+    }
+  }
+  .custom-card {
+    background: linear-gradient(#3a7c2d, #3a7c2d);
+    border: none;
+    box-shadow: 0 4px 8px #3a7c2d4b;
+  }
+  /* Estilo para animação no hover dos cards */
+.card:hover {
+    transform: scale(1.1); /* Ajuste conforme necessário para a escala desejada */
+    transition: transform 0.3s ease; /* Adiciona uma transição suave */
+    cursor: pointer;
+  }
+  
+  .text-dark {
+    color: #343a40;
+  }
+  /* Ajuste o tamanho dos ícones conforme necessário */
+.card-body i {
+    font-size: 4em; /* Tamanho do ícone */
+  }
+  
+/* Estilo para tornar a imagem responsiva */
+.responsive-image {
+    max-width: 100%; /* Ajuste conforme necessário */
+    height: auto;
+  }
+  
+  /* Estilo para dispositivos móveis */
+  @media (max-width: 767px) {
+    .section_um {
+      padding-top: 50px; /* Ajuste conforme necessário */
+    }
+    
+    .section_um img {
+      max-width: 80%; /* Ajuste conforme necessário */
+      margin: 0 auto; /* Centraliza a imagem */
+    }
+  }
+  
+ /* Estilo personalizado */
+.timeline-item {
+    border-left: 2px solid #dee2e6; /* Cor da linha do tempo (cinza) */
+    padding-left: 30px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.timeline-icon {
+    position: absolute;
+    left: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+}
+
+.timeline-content {
+    padding-right: 15px;
+    color: white;
+    text-align: start;
+}
+
+.timeline-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: rgb(144, 250, 149);
+    
+}
+
+.timeline-meta {
+    font-size: 14px;
+    color: white;
+    text-align: start;
+}
+
+@media (max-width: 767px) {
+    .timeline-item {
+        padding-left: 15px;
+    }
+
+    .timeline-content {
+        padding-right: 15px;
+    }
+
+    .timeline-icon {
+        left: -10px;
+        font-size: 20px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .timeline-title {
+        font-size: 18px;
+        color: rgb(144, 250, 149);
+    }
+
+    .timeline-meta {
+        font-size: 12px;
+    }
+}
+
+.text-parceiro{
+    color: #506450;
+}
